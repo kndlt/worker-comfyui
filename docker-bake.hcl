@@ -1,9 +1,9 @@
 variable "DOCKERHUB_REPO" {
-  default = "sprited"
+  default = "runpod"
 }
 
 variable "DOCKERHUB_IMG" {
-  default = "spritedx-worker-comfyui"
+  default = "worker-comfyui"
 }
 
 variable "RELEASE_VERSION" {
@@ -11,24 +11,24 @@ variable "RELEASE_VERSION" {
 }
 
 variable "COMFYUI_VERSION" {
-  default = "0.3.49"
+  default = "0.3.44"
 }
 
-# Global defaults for standard CUDA 12.9.1 images
+# Global defaults for standard CUDA 12.6.3 images
 variable "BASE_IMAGE" {
-  default = "nvidia/cuda:12.9.1-cudnn-runtime-ubuntu24.04"
+  default = "nvidia/cuda:12.6.3-cudnn-runtime-ubuntu24.04"
 }
 
 variable "CUDA_VERSION_FOR_COMFY" {
-  default = "12.9"
+  default = "12.6"
 }
 
 variable "ENABLE_PYTORCH_UPGRADE" {
-  default = "true"
+  default = "false"
 }
 
 variable "PYTORCH_INDEX_URL" {
-  default = "https://download.pytorch.org/whl/cu129"
+  default = ""
 }
 
 variable "HUGGINGFACE_ACCESS_TOKEN" {
